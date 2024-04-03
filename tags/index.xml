@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tags on 🍊MIKAN no Blog</title>
+    <link>https://mikangogo.github.io/making-records/tags/</link>
+    <description>Recent content in Tags on 🍊MIKAN no Blog</description>
+    <image>
+      <title>🍊MIKAN no Blog</title>
+      <url>https://mikangogo.github.io/making-records/images/papermod-cover.png</url>
+      <link>https://mikangogo.github.io/making-records/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 03 Apr 2024 19:22:01 +0900</lastBuildDate>
+    <atom:link href="https://mikangogo.github.io/making-records/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>お知らせ</title>
+      <link>https://mikangogo.github.io/making-records/tags/%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B/</link>
+      <pubDate>Wed, 03 Apr 2024 19:22:01 +0900</pubDate>
+      <guid>https://mikangogo.github.io/making-records/tags/%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

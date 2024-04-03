@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>お知らせ on 🍊MIKAN no Blog</title>
+    <link>https://mikangogo.github.io/making-records/tags/%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B/</link>
+    <description>Recent content in お知らせ on 🍊MIKAN no Blog</description>
+    <image>
+      <title>🍊MIKAN no Blog</title>
+      <url>https://mikangogo.github.io/making-records/images/papermod-cover.png</url>
+      <link>https://mikangogo.github.io/making-records/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 03 Apr 2024 19:22:01 +0900</lastBuildDate>
+    <atom:link href="https://mikangogo.github.io/making-records/tags/%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>運用開始</title>
+      <link>https://mikangogo.github.io/making-records/posts/other/20240403/fab539baa9b498043d7bfcb5ff177e1e14c58b1a40db7d6f21577b2f805a4d34/</link>
+      <pubDate>Wed, 03 Apr 2024 19:22:01 +0900</pubDate>
+      <guid>https://mikangogo.github.io/making-records/posts/other/20240403/fab539baa9b498043d7bfcb5ff177e1e14c58b1a40db7d6f21577b2f805a4d34/</guid>
+      <description>とりあえず運用開始。
+メモ書きレベルの内容なのでご容赦を。</description>
+    </item>
+  </channel>
+</rss>

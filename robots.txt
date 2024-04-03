@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://mikangogo.github.io/making-records/sitemap.xml
