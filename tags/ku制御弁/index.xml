@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Posts on 🍊MIKAN no Blog</title>
-    <link>https://mikangogo.github.io/making-records/posts/</link>
-    <description>Recent content in Posts on 🍊MIKAN no Blog</description>
+    <title>KU制御弁 on 🍊MIKAN no Blog</title>
+    <link>https://mikangogo.github.io/making-records/tags/ku%E5%88%B6%E5%BE%A1%E5%BC%81/</link>
+    <description>Recent content in KU制御弁 on 🍊MIKAN no Blog</description>
     <image>
       <title>🍊MIKAN no Blog</title>
       <url>https://mikangogo.github.io/making-records/images/papermod-cover.png</url>
@@ -12,7 +12,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 03 Apr 2024 20:03:38 +0900</lastBuildDate>
-    <atom:link href="https://mikangogo.github.io/making-records/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://mikangogo.github.io/making-records/tags/ku%E5%88%B6%E5%BE%A1%E5%BC%81/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>自動空気ブレーキまとめ (1)</title>
       <link>https://mikangogo.github.io/making-records/posts/train/20240403/a96744bff0bf00ce909e83774917693756526e1d74ffd7baa738f568e5697b52/</link>
@@ -23,14 +23,6 @@
 掲載場所 JREA 1969年11月号 p.6496- 「新制御弁　KU制御弁の性能（小島健一）」 NDLデジタルコレクションから閲覧可。
 内容 C17ブレーキ制御装置断面図 (p.6497) 急動空気室: 0.45L 膨張空気室: 1.7L 作用空気室: 1.8L 定圧空気ダメ: 13.6L C17は12系客車で使用。
 伝達速度 (p.6498) 弁の種類 常用 非常 K制御弁 60-70 [m/s] 80-90 [m/s] A制御弁 80-90 [m/s] 100-110 [m/s] KU制御弁 250-280 [m/s] 250-280 [m/s] 制御弁動作線図 (p.6499) 15両編成におけるKU制御弁動作線図の代表例 常用ブレーキのとき 常用ブレーキ (1.4 [kg/cm2] 減圧のとき) 非常ブレーキのとき 12系客車、12両編成で 110km/h の非常ブレーキで 約460m で停止。 </description>
-    </item>
-    <item>
-      <title>運用開始</title>
-      <link>https://mikangogo.github.io/making-records/posts/other/20240403/fab539baa9b498043d7bfcb5ff177e1e14c58b1a40db7d6f21577b2f805a4d34/</link>
-      <pubDate>Wed, 03 Apr 2024 19:22:01 +0900</pubDate>
-      <guid>https://mikangogo.github.io/making-records/posts/other/20240403/fab539baa9b498043d7bfcb5ff177e1e14c58b1a40db7d6f21577b2f805a4d34/</guid>
-      <description>とりあえず運用開始。
-メモ書きレベルの内容なのでご容赦を。</description>
     </item>
   </channel>
 </rss>
