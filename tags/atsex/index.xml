@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>AtsEx on 🍊MIKAN no Blog</title>
+    <link>https://mikangogo.github.io/making-records/tags/atsex/</link>
+    <description>Recent content in AtsEx on 🍊MIKAN no Blog</description>
+    <image>
+      <title>🍊MIKAN no Blog</title>
+      <url>https://mikangogo.github.io/making-records/images/papermod-cover.png</url>
+      <link>https://mikangogo.github.io/making-records/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 03 Apr 2024 20:39:00 +0900</lastBuildDate>
+    <atom:link href="https://mikangogo.github.io/making-records/tags/atsex/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AtsExからの拡張情報のとりまとめ構想</title>
+      <link>https://mikangogo.github.io/making-records/posts/bve/20240403/c75fc9c249d15e3d799b37c38e7129e2776522df665ff16b1a5a80707cdc801e/</link>
+      <pubDate>Wed, 03 Apr 2024 20:39:00 +0900</pubDate>
+      <guid>https://mikangogo.github.io/making-records/posts/bve/20240403/c75fc9c249d15e3d799b37c38e7129e2776522df665ff16b1a5a80707cdc801e/</guid>
+      <description>概要 AtsEx プラグインは大変強力で、 Bve 本体からの情報を Ats プラグイン以上に取得できる機構を持つ。
+拙作の車両データにおいても、 AtsEx プラグインを用いて拡張的な情報を取得し、シミュレーションの再現度を高めたいと考えた。
+そこで、拙作の既存の Ats プラグイン群と絡めて使用する場合に、どのような構成を取ることができるか考えてみることにした。
+AtsEx プラグインで取得したい情報 乗車率 乗車率 力行回路シミュレーション、空気ブレーキシミュレーション時の応荷重装置の実装が可能になる。Bveの応荷重では単位乗車時の倍率が設定できないため、柔軟性に欠けシミュレーションとしては不正確になる場合がある。
+以降、書きかけ。</description>
+    </item>
+  </channel>
+</rss>
