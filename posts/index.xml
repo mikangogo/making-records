@@ -11,8 +11,22 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 03 Apr 2024 20:39:00 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 04 Apr 2024 21:22:13 +0900</lastBuildDate>
     <atom:link href="https://mikangogo.github.io/making-records/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>macOS上のアプリケーションではOpenGLの垂直同期を待ってくれない</title>
+      <link>https://mikangogo.github.io/making-records/posts/tech/20240404/1579c0d88430da77171f416a8ef1cf498a83decc06ba394a7846f6b100cab33a/</link>
+      <pubDate>Thu, 04 Apr 2024 21:22:13 +0900</pubDate>
+      <guid>https://mikangogo.github.io/making-records/posts/tech/20240404/1579c0d88430da77171f416a8ef1cf498a83decc06ba394a7846f6b100cab33a/</guid>
+      <description>概要 macOS 上の OpenGL を使用しているアプリケーションのフレームレートが、なぜかモニタのリフレッシュレート以上に出ている。
+※業務で macOS のアプリケーションを確認しているときに気がついた。
+問題の認識 GLFW の Issue
+Swap interval ignored on macOS 13 #2249 他にも苦情言ってる人達
+examples/windowsize: FPS is too high (about 120) on macOS w/ OpenGL #2472 [bug] [macOS] verticalSync problem since macOS13 (GLFW-inherited issue) #7760 Apple 公式フォーラムで怒り狂う人達
+macOS Ventura (13.1) Vsync is broken and scaling is badly designed ※私も頭にきてる💢
+直す方法あるらしい。 CVDisplayLink を使うんだと。
+macOS: Use CVDisplayLink for vsync #2277 </description>
+    </item>
     <item>
       <title>AtsExからの拡張情報のとりまとめ構想</title>
       <link>https://mikangogo.github.io/making-records/posts/bve/20240403/c75fc9c249d15e3d799b37c38e7129e2776522df665ff16b1a5a80707cdc801e/</link>

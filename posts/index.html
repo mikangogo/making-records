@@ -160,6 +160,25 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">macOS上のアプリケーションではOpenGLの垂直同期を待ってくれない
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>概要 macOS 上の OpenGL を使用しているアプリケーションのフレームレートが、なぜかモニタのリフレッシュレート以上に出ている。
+※業務で macOS のアプリケーションを確認しているときに気がついた。
+問題の認識 GLFW の Issue
+Swap interval ignored on macOS 13 #2249 他にも苦情言ってる人達
+examples/windowsize: FPS is too high (about 120) on macOS w/ OpenGL #2472 [bug] [macOS] verticalSync problem since macOS13 (GLFW-inherited issue) #7760 Apple 公式フォーラムで怒り狂う人達
+macOS Ventura (13.1) Vsync is broken and scaling is badly designed ※私も頭にきてる💢
+直す方法あるらしい。 CVDisplayLink を使うんだと。
+macOS: Use CVDisplayLink for vsync #2277 </p>
+  </div>
+  <footer class="entry-footer"><span title='2024-04-04 21:22:13 +0900 JST'>April 4, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Rock_On</footer>
+  <a class="entry-link" aria-label="post link to macOS上のアプリケーションではOpenGLの垂直同期を待ってくれない" href="https://mikangogo.github.io/making-records/posts/tech/20240404/1579c0d88430da77171f416a8ef1cf498a83decc06ba394a7846f6b100cab33a/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">AtsExからの拡張情報のとりまとめ構想
     </h2>
   </header>

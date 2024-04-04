@@ -11,8 +11,22 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 03 Apr 2024 20:39:00 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 04 Apr 2024 21:22:13 +0900</lastBuildDate>
     <atom:link href="https://mikangogo.github.io/making-records/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MacOS</title>
+      <link>https://mikangogo.github.io/making-records/tags/macos/</link>
+      <pubDate>Thu, 04 Apr 2024 21:22:13 +0900</pubDate>
+      <guid>https://mikangogo.github.io/making-records/tags/macos/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>OpenGL</title>
+      <link>https://mikangogo.github.io/making-records/tags/opengl/</link>
+      <pubDate>Thu, 04 Apr 2024 21:22:13 +0900</pubDate>
+      <guid>https://mikangogo.github.io/making-records/tags/opengl/</guid>
+      <description></description>
+    </item>
     <item>
       <title>AtsEx</title>
       <link>https://mikangogo.github.io/making-records/tags/atsex/</link>
