@@ -5,18 +5,14 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>macOSは垂直同期を待たない？ | 🍊MIKAN no Blog</title>
-<meta name="keywords" content="macOS, OpenGL">
-<meta name="description" content="概要 macOS 上の OpenGL を使用しているアプリケーションのフレームレートが、なぜかモニタのリフレッシュレート以上に出ている。
-※業務で macOS のアプリケーションを確認しているときに気がついた。
-問題の認識 GLFW の Issue
-Swap interval ignored on macOS 13 #2249 他にも苦情言ってる人達
-examples/windowsize: FPS is too high (about 120) on macOS w/ OpenGL #2472 [bug] [macOS] verticalSync problem since macOS13 (GLFW-inherited issue) #7760 Apple 公式フォーラムで怒り狂う人達
-macOS Ventura (13.1) Vsync is broken and scaling is badly designed ※私も頭にきてる💢
-直す方法あるらしい。 CVDisplayLink を使うんだと。
-macOS: Use CVDisplayLink for vsync #2277 ">
+<title>K制御弁カットモデル | 🍊MIKAN no Blog</title>
+<meta name="keywords" content="自動空気ブレーキ, K制御弁, 貨物鉄道博物館">
+<meta name="description" content="情報 万葉さんから情報提供
+貨物鉄道博物館にK制御弁のカットモデルがあるそう。
+K制御弁カットモデル 万葉さん投稿から
+手で押しても割と重く、摺動抵抗が大きい？（給油されていないから？） 元々 JR貨物 の教習用の物だそう。 ※カラマツやフレイトとかに張り付いていたら、もしかしたら出品あったりするのか…？">
 <meta name="author" content="Rock_On">
-<link rel="canonical" href="https://mikangogo.github.io/making-records/posts/tech/20240404/1579c0d88430da77171f416a8ef1cf498a83decc06ba394a7846f6b100cab33a/">
+<link rel="canonical" href="https://mikangogo.github.io/making-records/posts/train/20240405/c1221444e8a34ec7f17a6dbae32c3db3f41402a8baca929ebcc6bb748646ef44/">
 <link crossorigin="anonymous" href="/making-records/assets/css/stylesheet.b609c58d5c11bb90b1a54e04005d74ad1ddf22165eb79f5533967e57df9c3b50.css" integrity="sha256-tgnFjVwRu5CxpU4EAF10rR3fIhZet59VM5Z&#43;V9&#43;cO1A=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://mikangogo.github.io/making-records/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://mikangogo.github.io/making-records/favicon-16x16.png">
@@ -25,7 +21,7 @@ macOS: Use CVDisplayLink for vsync #2277 ">
 <link rel="mask-icon" href="https://mikangogo.github.io/making-records/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="https://mikangogo.github.io/making-records/posts/tech/20240404/1579c0d88430da77171f416a8ef1cf498a83decc06ba394a7846f6b100cab33a/">
+<link rel="alternate" hreflang="en" href="https://mikangogo.github.io/making-records/posts/train/20240405/c1221444e8a34ec7f17a6dbae32c3db3f41402a8baca929ebcc6bb748646ef44/">
 <noscript>
     <style>
         #theme-toggle,
@@ -62,33 +58,25 @@ macOS: Use CVDisplayLink for vsync #2277 ">
         }
 
     </style>
-</noscript><meta property="og:title" content="macOSは垂直同期を待たない？" />
-<meta property="og:description" content="概要 macOS 上の OpenGL を使用しているアプリケーションのフレームレートが、なぜかモニタのリフレッシュレート以上に出ている。
-※業務で macOS のアプリケーションを確認しているときに気がついた。
-問題の認識 GLFW の Issue
-Swap interval ignored on macOS 13 #2249 他にも苦情言ってる人達
-examples/windowsize: FPS is too high (about 120) on macOS w/ OpenGL #2472 [bug] [macOS] verticalSync problem since macOS13 (GLFW-inherited issue) #7760 Apple 公式フォーラムで怒り狂う人達
-macOS Ventura (13.1) Vsync is broken and scaling is badly designed ※私も頭にきてる💢
-直す方法あるらしい。 CVDisplayLink を使うんだと。
-macOS: Use CVDisplayLink for vsync #2277 " />
+</noscript><meta property="og:title" content="K制御弁カットモデル" />
+<meta property="og:description" content="情報 万葉さんから情報提供
+貨物鉄道博物館にK制御弁のカットモデルがあるそう。
+K制御弁カットモデル 万葉さん投稿から
+手で押しても割と重く、摺動抵抗が大きい？（給油されていないから？） 元々 JR貨物 の教習用の物だそう。 ※カラマツやフレイトとかに張り付いていたら、もしかしたら出品あったりするのか…？" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://mikangogo.github.io/making-records/posts/tech/20240404/1579c0d88430da77171f416a8ef1cf498a83decc06ba394a7846f6b100cab33a/" />
+<meta property="og:url" content="https://mikangogo.github.io/making-records/posts/train/20240405/c1221444e8a34ec7f17a6dbae32c3db3f41402a8baca929ebcc6bb748646ef44/" />
 <meta property="og:image" content="https://mikangogo.github.io/making-records/images/papermod-cover.png" />
 <meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2024-04-04T21:22:13+09:00" />
-<meta property="article:modified_time" content="2024-04-04T21:22:13+09:00" />
+<meta property="article:published_time" content="2024-04-05T01:10:09+09:00" />
+<meta property="article:modified_time" content="2024-04-05T01:10:09+09:00" />
 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="https://mikangogo.github.io/making-records/images/papermod-cover.png" />
-<meta name="twitter:title" content="macOSは垂直同期を待たない？"/>
-<meta name="twitter:description" content="概要 macOS 上の OpenGL を使用しているアプリケーションのフレームレートが、なぜかモニタのリフレッシュレート以上に出ている。
-※業務で macOS のアプリケーションを確認しているときに気がついた。
-問題の認識 GLFW の Issue
-Swap interval ignored on macOS 13 #2249 他にも苦情言ってる人達
-examples/windowsize: FPS is too high (about 120) on macOS w/ OpenGL #2472 [bug] [macOS] verticalSync problem since macOS13 (GLFW-inherited issue) #7760 Apple 公式フォーラムで怒り狂う人達
-macOS Ventura (13.1) Vsync is broken and scaling is badly designed ※私も頭にきてる💢
-直す方法あるらしい。 CVDisplayLink を使うんだと。
-macOS: Use CVDisplayLink for vsync #2277 "/>
+<meta name="twitter:title" content="K制御弁カットモデル"/>
+<meta name="twitter:description" content="情報 万葉さんから情報提供
+貨物鉄道博物館にK制御弁のカットモデルがあるそう。
+K制御弁カットモデル 万葉さん投稿から
+手で押しても割と重く、摺動抵抗が大きい？（給油されていないから？） 元々 JR貨物 の教習用の物だそう。 ※カラマツやフレイトとかに張り付いていたら、もしかしたら出品あったりするのか…？"/>
 
 
 <script type="application/ld+json">
@@ -105,8 +93,8 @@ macOS: Use CVDisplayLink for vsync #2277 "/>
     {
       "@type": "ListItem",
       "position":  2 ,
-      "name": "macOSは垂直同期を待たない？",
-      "item": "https://mikangogo.github.io/making-records/posts/tech/20240404/1579c0d88430da77171f416a8ef1cf498a83decc06ba394a7846f6b100cab33a/"
+      "name": "K制御弁カットモデル",
+      "item": "https://mikangogo.github.io/making-records/posts/train/20240405/c1221444e8a34ec7f17a6dbae32c3db3f41402a8baca929ebcc6bb748646ef44/"
     }
   ]
 }
@@ -115,24 +103,24 @@ macOS: Use CVDisplayLink for vsync #2277 "/>
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "macOSは垂直同期を待たない？",
-  "name": "macOSは垂直同期を待たない？",
-  "description": "概要 macOS 上の OpenGL を使用しているアプリケーションのフレームレートが、なぜかモニタのリフレッシュレート以上に出ている。\n※業務で macOS のアプリケーションを確認しているときに気がついた。\n問題の認識 GLFW の Issue\nSwap interval ignored on macOS 13 #2249 他にも苦情言ってる人達\nexamples/windowsize: FPS is too high (about 120) on macOS w/ OpenGL #2472 [bug] [macOS] verticalSync problem since macOS13 (GLFW-inherited issue) #7760 Apple 公式フォーラムで怒り狂う人達\nmacOS Ventura (13.1) Vsync is broken and scaling is badly designed ※私も頭にきてる💢\n直す方法あるらしい。 CVDisplayLink を使うんだと。\nmacOS: Use CVDisplayLink for vsync #2277 ",
+  "headline": "K制御弁カットモデル",
+  "name": "K制御弁カットモデル",
+  "description": "情報 万葉さんから情報提供\n貨物鉄道博物館にK制御弁のカットモデルがあるそう。\nK制御弁カットモデル 万葉さん投稿から\n手で押しても割と重く、摺動抵抗が大きい？（給油されていないから？） 元々 JR貨物 の教習用の物だそう。 ※カラマツやフレイトとかに張り付いていたら、もしかしたら出品あったりするのか…？",
   "keywords": [
-    "macOS", "OpenGL"
+    "自動空気ブレーキ", "K制御弁", "貨物鉄道博物館"
   ],
-  "articleBody": "概要 macOS 上の OpenGL を使用しているアプリケーションのフレームレートが、なぜかモニタのリフレッシュレート以上に出ている。\n※業務で macOS のアプリケーションを確認しているときに気がついた。\n問題の認識 GLFW の Issue\nSwap interval ignored on macOS 13 #2249 他にも苦情言ってる人達\nexamples/windowsize: FPS is too high (about 120) on macOS w/ OpenGL #2472 [bug] [macOS] verticalSync problem since macOS13 (GLFW-inherited issue) #7760 Apple 公式フォーラムで怒り狂う人達\nmacOS Ventura (13.1) Vsync is broken and scaling is badly designed ※私も頭にきてる💢\n直す方法あるらしい。 CVDisplayLink を使うんだと。\nmacOS: Use CVDisplayLink for vsync #2277 ",
-  "wordCount" : "64",
+  "articleBody": "情報 万葉さんから情報提供\n貨物鉄道博物館にK制御弁のカットモデルがあるそう。\nK制御弁カットモデル 万葉さん投稿から\n手で押しても割と重く、摺動抵抗が大きい？（給油されていないから？） 元々 JR貨物 の教習用の物だそう。 ※カラマツやフレイトとかに張り付いていたら、もしかしたら出品あったりするのか…？\n",
+  "wordCount" : "10",
   "inLanguage": "en",
-  "image": "https://mikangogo.github.io/making-records/images/papermod-cover.png","datePublished": "2024-04-04T21:22:13+09:00",
-  "dateModified": "2024-04-04T21:22:13+09:00",
+  "image": "https://mikangogo.github.io/making-records/images/papermod-cover.png","datePublished": "2024-04-05T01:10:09+09:00",
+  "dateModified": "2024-04-05T01:10:09+09:00",
   "author":{
     "@type": "Person",
     "name": "Rock_On"
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://mikangogo.github.io/making-records/posts/tech/20240404/1579c0d88430da77171f416a8ef1cf498a83decc06ba394a7846f6b100cab33a/"
+    "@id": "https://mikangogo.github.io/making-records/posts/train/20240405/c1221444e8a34ec7f17a6dbae32c3db3f41402a8baca929ebcc6bb748646ef44/"
   },
   "publisher": {
     "@type": "Organization",
@@ -210,9 +198,9 @@ macOS: Use CVDisplayLink for vsync #2277 "/>
   <header class="post-header">
     <div class="breadcrumbs"><a href="https://mikangogo.github.io/making-records/">Home</a>&nbsp;»&nbsp;<a href="https://mikangogo.github.io/making-records/posts/">Posts</a></div>
     <h1 class="post-title entry-hint-parent">
-      macOSは垂直同期を待たない？
+      K制御弁カットモデル
     </h1>
-    <div class="post-meta"><span title='2024-04-04 21:22:13 +0900 JST'>April 4, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Rock_On
+    <div class="post-meta"><span title='2024-04-05 01:10:09 +0900 JST'>April 5, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Rock_On
 
 </div>
   </header> <div class="toc">
@@ -223,64 +211,48 @@ macOS: Use CVDisplayLink for vsync #2277 "/>
 
         <div class="inner"><ul>
                 <li>
-                    <a href="#%e6%a6%82%e8%a6%81" aria-label="概要">概要</a></li>
+                    <a href="#%e6%83%85%e5%a0%b1" aria-label="情報">情報</a></li>
                 <li>
-                    <a href="#%e5%95%8f%e9%a1%8c%e3%81%ae%e8%aa%8d%e8%ad%98" aria-label="問題の認識">問題の認識</a>
+                    <a href="#k%e5%88%b6%e5%be%a1%e5%bc%81%e3%82%ab%e3%83%83%e3%83%88%e3%83%a2%e3%83%87%e3%83%ab" aria-label="K制御弁カットモデル">K制御弁カットモデル</a>
                 </li>
             </ul>
         </div>
     </details>
 </div>
 
-  <div class="post-content"><h1 id="概要">概要<a hidden class="anchor" aria-hidden="true" href="#概要">#</a></h1>
-<p>macOS 上の OpenGL を使用しているアプリケーションのフレームレートが、なぜかモニタのリフレッシュレート以上に出ている。</p>
-<p>※業務で macOS のアプリケーションを確認しているときに気がついた。</p>
-<h1 id="問題の認識">問題の認識<a hidden class="anchor" aria-hidden="true" href="#問題の認識">#</a></h1>
-<p>GLFW の Issue</p>
+  <div class="post-content"><h1 id="情報">情報<a hidden class="anchor" aria-hidden="true" href="#情報">#</a></h1>
+<p><a href="https://bsky.app/profile/ancientcapital-jp.bsky.social/post/3kpcma4mvpq2b">万葉さんから情報提供</a></p>
+<p>貨物鉄道博物館にK制御弁のカットモデルがあるそう。</p>
+<h1 id="k制御弁カットモデル">K制御弁カットモデル<a hidden class="anchor" aria-hidden="true" href="#k制御弁カットモデル">#</a></h1>
+<p><a href="https://bsky.app/profile/ancientcapital-jp.bsky.social/post/3kpcociyf652q">万葉さん投稿から</a></p>
 <ul>
-<li><a href="https://github.com/glfw/glfw/issues/2249">Swap interval ignored on macOS 13 #2249</a></li>
+<li>手で押しても割と重く、摺動抵抗が大きい？（給油されていないから？）</li>
+<li>元々 JR貨物 の教習用の物だそう。</li>
 </ul>
-<p>他にも苦情言ってる人達</p>
-<ul>
-<li><a href="https://github.com/hajimehoshi/ebiten/issues/2472">examples/windowsize: FPS is too high (about 120) on macOS w/ OpenGL #2472</a></li>
-<li><a href="https://github.com/openframeworks/openFrameworks/issues/7760">[bug] [macOS] verticalSync problem since macOS13 (GLFW-inherited issue) #7760</a></li>
-</ul>
-<p>Apple 公式フォーラムで怒り狂う人達</p>
-<ul>
-<li><a href="https://discussions.apple.com/thread/254533240?sortBy=best">macOS Ventura (13.1) Vsync is broken and scaling is badly designed</a></li>
-</ul>
-<p>※私も頭にきてる💢</p>
-<p>直す方法あるらしい。 <code>CVDisplayLink</code> を使うんだと。</p>
-<ul>
-<li><a href="https://github.com/glfw/glfw/pull/2277">macOS: Use CVDisplayLink for vsync #2277</a></li>
-</ul>
+<p>※カラマツやフレイトとかに張り付いていたら、もしかしたら出品あったりするのか…？</p>
 
 
   </div>
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="https://mikangogo.github.io/making-records/tags/macos/">MacOS</a></li>
-      <li><a href="https://mikangogo.github.io/making-records/tags/opengl/">OpenGL</a></li>
+      <li><a href="https://mikangogo.github.io/making-records/tags/%E8%87%AA%E5%8B%95%E7%A9%BA%E6%B0%97%E3%83%96%E3%83%AC%E3%83%BC%E3%82%AD/">自動空気ブレーキ</a></li>
+      <li><a href="https://mikangogo.github.io/making-records/tags/k%E5%88%B6%E5%BE%A1%E5%BC%81/">K制御弁</a></li>
+      <li><a href="https://mikangogo.github.io/making-records/tags/%E8%B2%A8%E7%89%A9%E9%89%84%E9%81%93%E5%8D%9A%E7%89%A9%E9%A4%A8/">貨物鉄道博物館</a></li>
     </ul>
 <nav class="paginav">
-  <a class="prev" href="https://mikangogo.github.io/making-records/posts/train/20240405/c1221444e8a34ec7f17a6dbae32c3db3f41402a8baca929ebcc6bb748646ef44/">
-    <span class="title">« Prev</span>
-    <br>
-    <span>K制御弁カットモデル</span>
-  </a>
-  <a class="next" href="https://mikangogo.github.io/making-records/posts/bve/20240403/c75fc9c249d15e3d799b37c38e7129e2776522df665ff16b1a5a80707cdc801e/">
+  <a class="next" href="https://mikangogo.github.io/making-records/posts/tech/20240404/1579c0d88430da77171f416a8ef1cf498a83decc06ba394a7846f6b100cab33a/">
     <span class="title">Next »</span>
     <br>
-    <span>AtsExからの拡張情報のとりまとめ構想</span>
+    <span>macOSは垂直同期を待たない？</span>
   </a>
 </nav>
 
 
 <ul class="share-buttons">
     <li>
-        <a target="_blank" rel="noopener noreferrer" aria-label="share macOSは垂直同期を待たない？ on x"
-            href="https://x.com/intent/tweet/?text=macOS%e3%81%af%e5%9e%82%e7%9b%b4%e5%90%8c%e6%9c%9f%e3%82%92%e5%be%85%e3%81%9f%e3%81%aa%e3%81%84%ef%bc%9f&amp;url=https%3a%2f%2fmikangogo.github.io%2fmaking-records%2fposts%2ftech%2f20240404%2f1579c0d88430da77171f416a8ef1cf498a83decc06ba394a7846f6b100cab33a%2f&amp;hashtags=macOS%2cOpenGL">
+        <a target="_blank" rel="noopener noreferrer" aria-label="share K制御弁カットモデル on x"
+            href="https://x.com/intent/tweet/?text=K%e5%88%b6%e5%be%a1%e5%bc%81%e3%82%ab%e3%83%83%e3%83%88%e3%83%a2%e3%83%87%e3%83%ab&amp;url=https%3a%2f%2fmikangogo.github.io%2fmaking-records%2fposts%2ftrain%2f20240405%2fc1221444e8a34ec7f17a6dbae32c3db3f41402a8baca929ebcc6bb748646ef44%2f&amp;hashtags=%e8%87%aa%e5%8b%95%e7%a9%ba%e6%b0%97%e3%83%96%e3%83%ac%e3%83%bc%e3%82%ad%2cK%e5%88%b6%e5%be%a1%e5%bc%81%2c%e8%b2%a8%e7%89%a9%e9%89%84%e9%81%93%e5%8d%9a%e7%89%a9%e9%a4%a8">
             <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
                 <path
                     d="M512 62.554 L 512 449.446 C 512 483.97 483.97 512 449.446 512 L 62.554 512 C 28.03 512 0 483.97 0 449.446 L 0 62.554 C 0 28.03 28.029 0 62.554 0 L 449.446 0 C 483.971 0 512 28.03 512 62.554 Z M 269.951 190.75 L 182.567 75.216 L 56 75.216 L 207.216 272.95 L 63.9 436.783 L 125.266 436.783 L 235.9 310.383 L 332.567 436.783 L 456 436.783 L 298.367 228.367 L 432.367 75.216 L 371.033 75.216 Z M 127.633 110 L 164.101 110 L 383.481 400.065 L 349.5 400.065 Z" />
@@ -288,8 +260,8 @@ macOS: Use CVDisplayLink for vsync #2277 "/>
         </a>
     </li>
     <li>
-        <a target="_blank" rel="noopener noreferrer" aria-label="share macOSは垂直同期を待たない？ on facebook"
-            href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fmikangogo.github.io%2fmaking-records%2fposts%2ftech%2f20240404%2f1579c0d88430da77171f416a8ef1cf498a83decc06ba394a7846f6b100cab33a%2f">
+        <a target="_blank" rel="noopener noreferrer" aria-label="share K制御弁カットモデル on facebook"
+            href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fmikangogo.github.io%2fmaking-records%2fposts%2ftrain%2f20240405%2fc1221444e8a34ec7f17a6dbae32c3db3f41402a8baca929ebcc6bb748646ef44%2f">
             <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
                 <path
                     d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-106.468,0l0,-192.915l66.6,0l12.672,-82.621l-79.272,0l0,-53.617c0,-22.603 11.073,-44.636 46.58,-44.636l36.042,0l0,-70.34c0,0 -32.71,-5.582 -63.982,-5.582c-65.288,0 -107.96,39.569 -107.96,111.204l0,62.971l-72.573,0l0,82.621l72.573,0l0,192.915l-191.104,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Z" />
