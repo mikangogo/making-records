@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>アデホス on 🍊MIKAN no Blog</title>
+    <link>https://mikangogo.github.io/making-records/tags/%E3%82%A2%E3%83%87%E3%83%9B%E3%82%B9/</link>
+    <description>Recent content in アデホス on 🍊MIKAN no Blog</description>
+    <image>
+      <title>🍊MIKAN no Blog</title>
+      <url>https://mikangogo.github.io/making-records/images/papermod-cover.png</url>
+      <link>https://mikangogo.github.io/making-records/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 05 Apr 2024 20:26:30 +0900</lastBuildDate>
+    <atom:link href="https://mikangogo.github.io/making-records/tags/%E3%82%A2%E3%83%87%E3%83%9B%E3%82%B9/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>アデホスがどのように難聴に効くのか</title>
+      <link>https://mikangogo.github.io/making-records/posts/misc/20240405/c3bb5e077c9c04b8c7a9da5d262d34c36232cd73b9a5a1dffe68b23203cda1d2/</link>
+      <pubDate>Fri, 05 Apr 2024 20:26:30 +0900</pubDate>
+      <guid>https://mikangogo.github.io/making-records/posts/misc/20240405/c3bb5e077c9c04b8c7a9da5d262d34c36232cd73b9a5a1dffe68b23203cda1d2/</guid>
+      <description>概要 ゲームの所属チーム内にお薬に詳しい方がおり、以前から気になっていた「アデホスがどのように難聴に効くのか」ということをうかがう機会があった。
+結果としては、確かに内耳の血流改善が為され難聴に効きそうだということが分かった。
+アデホス 医療用医薬品 : アデホス - kegg いわゆる ATP で、「エネルギー通貨」とも称される。 アデノシン三リン酸 - Wikipedia 薬効薬理 ATP腸溶剤 20mg 「第一三共」 から抜粋 2. 循環系に対する作用 ATPは脳血管拡張作用、脳血管抵抗の低下作用及び冠状動脈 拡張作用を示し、脳及び末梢の循環血流量を増加させる。 ATP製剤の解説 - 日経メディカル から抜粋 - ATPは体内で必要なエネルギー供給物質で血管拡張作用などもあらわす - ATPは脳血管などの血流増加や内耳微小血管の拡張、胃の運動改善など様々な作用をあらわす お薬に詳しい人の話 「 ATP は中枢より末梢の方に行くから、それで内耳の血流が改善するらしい。」 難聴の主たる原因 確か、内耳の血流の問題だったはず。
+アデホスと難聴の関わり合い ATP は血管拡張作用がある。内耳の血管も拡張され、血流が改善し難聴の具合も良くなることが見込める。
+その他 素人の思いつきなので医学的エビデンスはないが、以下のようなことを考えた。
+ATP の血管拡張作用によって、「末端冷え性」が改善する可能性がある？？ 「内耳の血流」が改善したら、難聴の具合が良くなるということは、例えばサウナとかで体を十分に温めれば同じ効果が得られるのでは？ </description>
+    </item>
+  </channel>
+</rss>
