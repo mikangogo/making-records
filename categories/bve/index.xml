@@ -11,8 +11,20 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 03 Apr 2024 20:39:00 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 05 Apr 2024 17:06:35 +0900</lastBuildDate>
     <atom:link href="https://mikangogo.github.io/making-records/categories/bve/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2エンジン車特有の音の再現</title>
+      <link>https://mikangogo.github.io/making-records/posts/bve/20240405/6d696f75c62a04d086d90a07fcddaffab86c18e7fd0da9fcee93c8fe61985c15/</link>
+      <pubDate>Fri, 05 Apr 2024 17:06:35 +0900</pubDate>
+      <guid>https://mikangogo.github.io/making-records/posts/bve/20240405/6d696f75c62a04d086d90a07fcddaffab86c18e7fd0da9fcee93c8fe61985c15/</guid>
+      <description>概要 Bve 上で再現している気動車の車両データにて、2エンジンの車が発する独特な不協和音を再現する方法について構想する。
+動機 YouTubeの動画を見ている際に、キハ58のエンジン音のピッチがノッチオフ時に同期せず不協和音になっていることに気がついた。
+大変独特かつ気に入っている雰囲気の音なので、なんとか Bve で再現できないかと思案した。
+仕組みの構想 Dmh17_Tc2a.dll を、次のようにリネームして Ats プラグインとして読み込ませるようにする。
+Dmh17_Tc2a_1.dll Dmh17_Tc2a_2.dll PluginParameters.txt 中の設定も、上記ふたつのプラグインとしてセクションを設ける。その際に、それぞれのエンジンの回転の上がり方等の特性を少し変える。
+課題 車両へのノッチ出力は、どちらかのプラグインの値を使うようにして衝突を防ぐ必要がある。 プラグインへのノッチ入力は、どちらのプラグインも平等に同じ値を用いる必要がある。 現状はこのような仕組みは存在しないので、 PluginOrganizer などの上流でよしなにしてあげるか、プラグイン自体に機能を持たせる必要がある。 同じ音源の音を同時に鳴らすので、音の波の位相が合致したり周期が180度ずれていると意図しないように聞こえるのではないか？ </description>
+    </item>
     <item>
       <title>AtsExからの拡張情報のとりまとめ構想</title>
       <link>https://mikangogo.github.io/making-records/posts/bve/20240403/c75fc9c249d15e3d799b37c38e7129e2776522df665ff16b1a5a80707cdc801e/</link>
