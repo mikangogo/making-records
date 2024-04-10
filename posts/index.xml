@@ -11,7 +11,7 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 08 Apr 2024 09:14:02 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 10 Apr 2024 11:32:51 +0900</lastBuildDate>
     <atom:link href="https://mikangogo.github.io/making-records/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ブルプロ攻略情報等</title>
@@ -44,9 +44,9 @@ ATP の血管拡張作用によって、「末端冷え性」が改善する可�
 Dmh17_Tc2a_1.dll Dmh17_Tc2a_2.dll PluginParameters.txt 中の設定も、上記ふたつのプラグインとしてセクションを設ける。その際に、それぞれのエンジンの回転の上がり方等の特性を少し変える。
 課題 車両へのノッチ出力は、どちらかのプラグインの値を使うようにして衝突を防ぐ必要がある。 プラグインへのノッチ入力は、どちらのプラグインも平等に同じ値を用いる必要がある。 現状はこのような仕組みは存在しないので、 PluginOrganizer などの上流でよしなにしてあげるか、プラグイン自体に機能を持たせる必要がある。 同じ音源の音を同時に鳴らすので、音の波の位相が合致したり周期が180度ずれていると意図しないように聞こえるのではないか？ PoC 以下の方法で概念実証を行った。
 Dmh17_Tc2a をコピーし Dmh17_Tc2a_2 という同じプラグインの名前違いを追加。 PluginParameters.txt の設定に Dmh17_Tc2a_2 セクションを設け、燃焼時の応答性の値を変更。(250.0 -&amp;gt; 750.0) PluginOrganizer に ATS_HANDLES を返さないモードを追加。 Instruction.yml に Dmh17_Tc2a_2.dll を追加。 これにより、車両データは以下のような状態となる。
-Dmh17_Tc2a プラグインをデータ内で 2つ 実行させる。 本当にエンジンを2つ回してしまう。 Bve 本体に送るハンドル位置は、 1つ の Dmh17_Tc2a の値を使用し、出力のバッティングを避ける。 結果 評価の基準 下記動画の状態
-厚狭→下関 キハ58 563 変直全開最高のサウンドDMH17H 車窓 山陽本線 もう走る事のない貴重鉄
-条件1 夏エンジン 直結段 フルノッチ、 85km/h にてノッチオフ。 条件2 夏エンジン 直結段 フルノッチ、 95km/h にてノッチオフ。 </description>
+Dmh17_Tc2a プラグインをデータ内で 2つ 実行させる。 本当にエンジンを2つ回してしまう。 Bve 本体に送るハンドル位置は、 1つ の Dmh17_Tc2a の値を使用し、出力のバッティングを避ける。 音声に関して、同じ波形の音声が同じ位相で鳴った場合に意図しない聞こえ方となってしまうため、以下の変更を行った。
+Dmh17_Tc2a_2 で再生する音は、ラジエターファンの音に限る。 ラジエターファンの音の変更。 燃焼音の変更。 結果 評価の基準 下記動画の状態
+厚狭→下関 キハ58 563 変直全開最高のサウンドDMH17H 車窓 山陽本線 もう走る事のない貴重鉄</description>
     </item>
     <item>
       <title>K制御弁カットモデル</title>
