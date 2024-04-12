@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>技術 on 🍊MIKAN no Blog</title>
-    <link>https://mikangogo.github.io/making-records/categories/%E6%8A%80%E8%A1%93/</link>
-    <description>Recent content in 技術 on 🍊MIKAN no Blog</description>
+    <title>C# on 🍊MIKAN no Blog</title>
+    <link>https://mikangogo.github.io/making-records/tags/c</link>
+    <description>Recent content in C# on 🍊MIKAN no Blog</description>
     <image>
       <title>🍊MIKAN no Blog</title>
       <url>https://mikangogo.github.io/making-records/images/papermod-cover.png</url>
@@ -12,7 +12,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Fri, 12 Apr 2024 20:57:52 +0900</lastBuildDate>
-    <atom:link href="https://mikangogo.github.io/making-records/categories/%E6%8A%80%E8%A1%93/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://mikangogo.github.io/making-records/tags/c" rel="self" type="application/rss+xml" />
     <item>
       <title>C#で複数のアセンブリを束ねる方法</title>
       <link>https://mikangogo.github.io/making-records/posts/tech/20240412/29680def7437a60c4a1b39d0897dc96b761035efc2c570d4f3ded03ed86af203/</link>
@@ -25,20 +25,6 @@
 プロジェクト中で参照している CIL の複数のアセンブリを、恐らく「ビルド後イベント」で 1つ のアセンブリに統合する。
 ILMerge is a utility that merges multiple .NET assemblies into a single assembly. It is freely available for use and is available as a NuGet package. 所感 前に試してうまくいかなかった。 WPF アプリケーションではうまくいかないようだ。（ WPF を使うわけではいんだけど。） アセンブリを埋め込みリソースにする WPFアプリケーションをEXEひとつにまとめる - secretbase.log@cointossさん Merging dlls into a single .exe with wpf - stackoverflow アセンブリを「埋め込みリソース」としてまとめたいアセンブリに埋め込んでしまい、解決は AppDomain.CurrentDomain.AssemblyResolve イベントで動的に行う。
 所感 試したらうまくいった。 Bve 5 / 6 系で .</description>
-    </item>
-    <item>
-      <title>macOSは垂直同期を待たない？</title>
-      <link>https://mikangogo.github.io/making-records/posts/tech/20240404/1579c0d88430da77171f416a8ef1cf498a83decc06ba394a7846f6b100cab33a/</link>
-      <pubDate>Thu, 04 Apr 2024 21:22:13 +0900</pubDate>
-      <guid>https://mikangogo.github.io/making-records/posts/tech/20240404/1579c0d88430da77171f416a8ef1cf498a83decc06ba394a7846f6b100cab33a/</guid>
-      <description>概要 macOS 上の OpenGL を使用しているアプリケーションのフレームレートが、なぜかモニタのリフレッシュレート以上に出ている。
-※業務で macOS のアプリケーションを確認しているときに気がついた。
-問題の認識 GLFW の Issue
-Swap interval ignored on macOS 13 #2249 他にも苦情言ってる人達
-examples/windowsize: FPS is too high (about 120) on macOS w/ OpenGL #2472 [bug] [macOS] verticalSync problem since macOS13 (GLFW-inherited issue) #7760 Apple 公式フォーラムで怒り狂う人達
-macOS Ventura (13.1) Vsync is broken and scaling is badly designed ※私も頭にきてる💢
-直す方法あるらしい。 CVDisplayLink を使うんだと。
-macOS: Use CVDisplayLink for vsync #2277 </description>
     </item>
   </channel>
 </rss>

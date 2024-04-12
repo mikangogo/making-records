@@ -160,6 +160,24 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">C#で複数のアセンブリを束ねる方法
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>概要 .NET Framework 環境下にて、複数のクラスライブラリを1つのクラスライブラリへ束ねる方法を紹介する。
+動機 PluginOrganizer では、外部のライブラリを依存させているが、実装当時の時間的制約によりライブラリのソースコードを本体に取り込んでビルドする方法を採っている。
+実際には外部のライブラリを依存させつつ本体に1つに束ねる方法があるので、どのような方法が有効であるのか考えることとした。
+手段 ILMerge https://github.com/dotnet/ILMerge
+プロジェクト中で参照している CIL の複数のアセンブリを、恐らく「ビルド後イベント」で 1つ のアセンブリに統合する。
+ILMerge is a utility that merges multiple .NET assemblies into a single assembly. It is freely available for use and is available as a NuGet package. 所感 前に試してうまくいかなかった。 WPF アプリケーションではうまくいかないようだ。（ WPF を使うわけではいんだけど。） アセンブリを埋め込みリソースにする WPFアプリケーションをEXEひとつにまとめる - secretbase.log@cointossさん Merging dlls into a single .exe with wpf - stackoverflow アセンブリを「埋め込みリソース」としてまとめたいアセンブリに埋め込んでしまい、解決は AppDomain.CurrentDomain.AssemblyResolve イベントで動的に行う。
+所感 試したらうまくいった。 Bve 5 / 6 系で ....</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-04-12 10:59:15 +0900 JST'>April 12, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Rock_On</footer>
+  <a class="entry-link" aria-label="post link to C#で複数のアセンブリを束ねる方法" href="https://mikangogo.github.io/making-records/posts/tech/20240412/29680def7437a60c4a1b39d0897dc96b761035efc2c570d4f3ded03ed86af203/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">ブルプロ攻略情報等
     </h2>
   </header>
@@ -221,25 +239,6 @@ K制御弁カットモデル 万葉さん投稿から
   </div>
   <footer class="entry-footer"><span title='2024-04-05 01:10:09 +0900 JST'>April 5, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Rock_On</footer>
   <a class="entry-link" aria-label="post link to K制御弁カットモデル" href="https://mikangogo.github.io/making-records/posts/train/20240405/c1221444e8a34ec7f17a6dbae32c3db3f41402a8baca929ebcc6bb748646ef44/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">macOSは垂直同期を待たない？
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>概要 macOS 上の OpenGL を使用しているアプリケーションのフレームレートが、なぜかモニタのリフレッシュレート以上に出ている。
-※業務で macOS のアプリケーションを確認しているときに気がついた。
-問題の認識 GLFW の Issue
-Swap interval ignored on macOS 13 #2249 他にも苦情言ってる人達
-examples/windowsize: FPS is too high (about 120) on macOS w/ OpenGL #2472 [bug] [macOS] verticalSync problem since macOS13 (GLFW-inherited issue) #7760 Apple 公式フォーラムで怒り狂う人達
-macOS Ventura (13.1) Vsync is broken and scaling is badly designed ※私も頭にきてる💢
-直す方法あるらしい。 CVDisplayLink を使うんだと。
-macOS: Use CVDisplayLink for vsync #2277 </p>
-  </div>
-  <footer class="entry-footer"><span title='2024-04-04 21:22:13 +0900 JST'>April 4, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Rock_On</footer>
-  <a class="entry-link" aria-label="post link to macOSは垂直同期を待たない？" href="https://mikangogo.github.io/making-records/posts/tech/20240404/1579c0d88430da77171f416a8ef1cf498a83decc06ba394a7846f6b100cab33a/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
