@@ -12,7 +12,7 @@
 実際には外部のライブラリを依存させつつ本体に1つに束ねる方法があるので、どのような方法が有効であるのか考えることとした。
 手段 ILMerge https://github.com/dotnet/ILMerge
 プロジェクト中で参照している CIL の複数のアセンブリを、恐らく「ビルド後イベント」で 1つ のアセンブリに統合する。
-ILMerge is a utility that merges multiple .NET assemblies into a single assembly. It is freely available for use and is available as a NuGet package. 所感 前に試してうまくいかなかった。 WPF アプリケーションではうまくいかないようだ。（ WPF を使うわけではいんだけど。） アセンブリを埋め込みリソースにする WPFアプリケーションをEXEひとつにまとめる - secretbase.log@cointossさん Merging dlls into a single .exe with wpf - stackoverflow アセンブリを「埋め込みリソース」としてまとめたいアセンブリに埋め込んでしまい、解決は AppDomain.CurrentDomain.AssemblyResolve イベントで動的に行う。
+ILMerge is a utility that merges multiple .NET assemblies into a single assembly. It is freely available for use and is available as a NuGet package. 所感 前に試してうまくいかなかった。 WPF アプリケーションではうまくいかないようだ。（ WPF を使うわけではないんだけど。） アセンブリを埋め込みリソースにする WPFアプリケーションをEXEひとつにまとめる - secretbase.log@cointossさん Merging dlls into a single .exe with wpf - stackoverflow アセンブリを「埋め込みリソース」としてまとめたいアセンブリに埋め込んでしまい、解決は AppDomain.CurrentDomain.AssemblyResolve イベントで動的に行う。
 所感 試したらうまくいった。 Bve 5 / 6 系で .">
 <meta name="author" content="Rock_On">
 <link rel="canonical" href="https://mikangogo.github.io/making-records/posts/tech/20240412/29680def7437a60c4a1b39d0897dc96b761035efc2c570d4f3ded03ed86af203/">
@@ -67,14 +67,14 @@ ILMerge is a utility that merges multiple .NET assemblies into a single assembly
 実際には外部のライブラリを依存させつつ本体に1つに束ねる方法があるので、どのような方法が有効であるのか考えることとした。
 手段 ILMerge https://github.com/dotnet/ILMerge
 プロジェクト中で参照している CIL の複数のアセンブリを、恐らく「ビルド後イベント」で 1つ のアセンブリに統合する。
-ILMerge is a utility that merges multiple .NET assemblies into a single assembly. It is freely available for use and is available as a NuGet package. 所感 前に試してうまくいかなかった。 WPF アプリケーションではうまくいかないようだ。（ WPF を使うわけではいんだけど。） アセンブリを埋め込みリソースにする WPFアプリケーションをEXEひとつにまとめる - secretbase.log@cointossさん Merging dlls into a single .exe with wpf - stackoverflow アセンブリを「埋め込みリソース」としてまとめたいアセンブリに埋め込んでしまい、解決は AppDomain.CurrentDomain.AssemblyResolve イベントで動的に行う。
+ILMerge is a utility that merges multiple .NET assemblies into a single assembly. It is freely available for use and is available as a NuGet package. 所感 前に試してうまくいかなかった。 WPF アプリケーションではうまくいかないようだ。（ WPF を使うわけではないんだけど。） アセンブリを埋め込みリソースにする WPFアプリケーションをEXEひとつにまとめる - secretbase.log@cointossさん Merging dlls into a single .exe with wpf - stackoverflow アセンブリを「埋め込みリソース」としてまとめたいアセンブリに埋め込んでしまい、解決は AppDomain.CurrentDomain.AssemblyResolve イベントで動的に行う。
 所感 試したらうまくいった。 Bve 5 / 6 系で ." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://mikangogo.github.io/making-records/posts/tech/20240412/29680def7437a60c4a1b39d0897dc96b761035efc2c570d4f3ded03ed86af203/" />
 <meta property="og:image" content="https://mikangogo.github.io/making-records/images/papermod-cover.png" />
 <meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2024-04-12T10:59:15+09:00" />
-<meta property="article:modified_time" content="2024-04-12T20:57:52+09:00" />
+<meta property="article:modified_time" content="2024-04-12T21:35:58+09:00" />
 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="https://mikangogo.github.io/making-records/images/papermod-cover.png" />
@@ -84,7 +84,7 @@ ILMerge is a utility that merges multiple .NET assemblies into a single assembly
 実際には外部のライブラリを依存させつつ本体に1つに束ねる方法があるので、どのような方法が有効であるのか考えることとした。
 手段 ILMerge https://github.com/dotnet/ILMerge
 プロジェクト中で参照している CIL の複数のアセンブリを、恐らく「ビルド後イベント」で 1つ のアセンブリに統合する。
-ILMerge is a utility that merges multiple .NET assemblies into a single assembly. It is freely available for use and is available as a NuGet package. 所感 前に試してうまくいかなかった。 WPF アプリケーションではうまくいかないようだ。（ WPF を使うわけではいんだけど。） アセンブリを埋め込みリソースにする WPFアプリケーションをEXEひとつにまとめる - secretbase.log@cointossさん Merging dlls into a single .exe with wpf - stackoverflow アセンブリを「埋め込みリソース」としてまとめたいアセンブリに埋め込んでしまい、解決は AppDomain.CurrentDomain.AssemblyResolve イベントで動的に行う。
+ILMerge is a utility that merges multiple .NET assemblies into a single assembly. It is freely available for use and is available as a NuGet package. 所感 前に試してうまくいかなかった。 WPF アプリケーションではうまくいかないようだ。（ WPF を使うわけではないんだけど。） アセンブリを埋め込みリソースにする WPFアプリケーションをEXEひとつにまとめる - secretbase.log@cointossさん Merging dlls into a single .exe with wpf - stackoverflow アセンブリを「埋め込みリソース」としてまとめたいアセンブリに埋め込んでしまい、解決は AppDomain.CurrentDomain.AssemblyResolve イベントで動的に行う。
 所感 試したらうまくいった。 Bve 5 / 6 系で ."/>
 
 
@@ -114,15 +114,15 @@ ILMerge is a utility that merges multiple .NET assemblies into a single assembly
   "@type": "BlogPosting",
   "headline": "C#で複数のアセンブリを束ねる方法",
   "name": "C#で複数のアセンブリを束ねる方法",
-  "description": "概要 .NET Framework 環境下にて、複数のクラスライブラリを1つのクラスライブラリへ束ねる方法を紹介する。\n動機 PluginOrganizer では、外部のライブラリを依存させているが、実装当時の時間的制約によりライブラリのソースコードを本体に取り込んでビルドする方法を採っている。\n実際には外部のライブラリを依存させつつ本体に1つに束ねる方法があるので、どのような方法が有効であるのか考えることとした。\n手段 ILMerge https://github.com/dotnet/ILMerge\nプロジェクト中で参照している CIL の複数のアセンブリを、恐らく「ビルド後イベント」で 1つ のアセンブリに統合する。\nILMerge is a utility that merges multiple .NET assemblies into a single assembly. It is freely available for use and is available as a NuGet package. 所感 前に試してうまくいかなかった。 WPF アプリケーションではうまくいかないようだ。（ WPF を使うわけではいんだけど。） アセンブリを埋め込みリソースにする WPFアプリケーションをEXEひとつにまとめる - secretbase.log@cointossさん Merging dlls into a single .exe with wpf - stackoverflow アセンブリを「埋め込みリソース」としてまとめたいアセンブリに埋め込んでしまい、解決は AppDomain.CurrentDomain.AssemblyResolve イベントで動的に行う。\n所感 試したらうまくいった。 Bve 5 / 6 系で .",
+  "description": "概要 .NET Framework 環境下にて、複数のクラスライブラリを1つのクラスライブラリへ束ねる方法を紹介する。\n動機 PluginOrganizer では、外部のライブラリを依存させているが、実装当時の時間的制約によりライブラリのソースコードを本体に取り込んでビルドする方法を採っている。\n実際には外部のライブラリを依存させつつ本体に1つに束ねる方法があるので、どのような方法が有効であるのか考えることとした。\n手段 ILMerge https://github.com/dotnet/ILMerge\nプロジェクト中で参照している CIL の複数のアセンブリを、恐らく「ビルド後イベント」で 1つ のアセンブリに統合する。\nILMerge is a utility that merges multiple .NET assemblies into a single assembly. It is freely available for use and is available as a NuGet package. 所感 前に試してうまくいかなかった。 WPF アプリケーションではうまくいかないようだ。（ WPF を使うわけではないんだけど。） アセンブリを埋め込みリソースにする WPFアプリケーションをEXEひとつにまとめる - secretbase.log@cointossさん Merging dlls into a single .exe with wpf - stackoverflow アセンブリを「埋め込みリソース」としてまとめたいアセンブリに埋め込んでしまい、解決は AppDomain.CurrentDomain.AssemblyResolve イベントで動的に行う。\n所感 試したらうまくいった。 Bve 5 / 6 系で .",
   "keywords": [
     "C#", ".NET"
   ],
-  "articleBody": "概要 .NET Framework 環境下にて、複数のクラスライブラリを1つのクラスライブラリへ束ねる方法を紹介する。\n動機 PluginOrganizer では、外部のライブラリを依存させているが、実装当時の時間的制約によりライブラリのソースコードを本体に取り込んでビルドする方法を採っている。\n実際には外部のライブラリを依存させつつ本体に1つに束ねる方法があるので、どのような方法が有効であるのか考えることとした。\n手段 ILMerge https://github.com/dotnet/ILMerge\nプロジェクト中で参照している CIL の複数のアセンブリを、恐らく「ビルド後イベント」で 1つ のアセンブリに統合する。\nILMerge is a utility that merges multiple .NET assemblies into a single assembly. It is freely available for use and is available as a NuGet package. 所感 前に試してうまくいかなかった。 WPF アプリケーションではうまくいかないようだ。（ WPF を使うわけではいんだけど。） アセンブリを埋め込みリソースにする WPFアプリケーションをEXEひとつにまとめる - secretbase.log@cointossさん Merging dlls into a single .exe with wpf - stackoverflow アセンブリを「埋め込みリソース」としてまとめたいアセンブリに埋め込んでしまい、解決は AppDomain.CurrentDomain.AssemblyResolve イベントで動的に行う。\n所感 試したらうまくいった。 Bve 5 / 6 系で .NET Framework の使用 Ver. が違うので、埋め込むアセンブリもビルドごとに別けてみたら、これもうまくいった。 .csproj も最低限の改造で良かった。これでいい。 ",
+  "articleBody": "概要 .NET Framework 環境下にて、複数のクラスライブラリを1つのクラスライブラリへ束ねる方法を紹介する。\n動機 PluginOrganizer では、外部のライブラリを依存させているが、実装当時の時間的制約によりライブラリのソースコードを本体に取り込んでビルドする方法を採っている。\n実際には外部のライブラリを依存させつつ本体に1つに束ねる方法があるので、どのような方法が有効であるのか考えることとした。\n手段 ILMerge https://github.com/dotnet/ILMerge\nプロジェクト中で参照している CIL の複数のアセンブリを、恐らく「ビルド後イベント」で 1つ のアセンブリに統合する。\nILMerge is a utility that merges multiple .NET assemblies into a single assembly. It is freely available for use and is available as a NuGet package. 所感 前に試してうまくいかなかった。 WPF アプリケーションではうまくいかないようだ。（ WPF を使うわけではないんだけど。） アセンブリを埋め込みリソースにする WPFアプリケーションをEXEひとつにまとめる - secretbase.log@cointossさん Merging dlls into a single .exe with wpf - stackoverflow アセンブリを「埋め込みリソース」としてまとめたいアセンブリに埋め込んでしまい、解決は AppDomain.CurrentDomain.AssemblyResolve イベントで動的に行う。\n所感 試したらうまくいった。 Bve 5 / 6 系で .NET Framework の使用 Ver. が違うので、埋め込むアセンブリもビルドごとに別けてみたら、これもうまくいった。 .csproj も最低限の改造で良かった。これでいい。 ",
   "wordCount" : "79",
   "inLanguage": "en",
   "image": "https://mikangogo.github.io/making-records/images/papermod-cover.png","datePublished": "2024-04-12T10:59:15+09:00",
-  "dateModified": "2024-04-12T20:57:52+09:00",
+  "dateModified": "2024-04-12T21:35:58+09:00",
   "author":{
     "@type": "Person",
     "name": "Rock_On"
@@ -260,7 +260,7 @@ ILMerge is a utility that merges multiple .NET assemblies into a single assembly
 </code></pre><h3 id="所感">所感<a hidden class="anchor" aria-hidden="true" href="#所感">#</a></h3>
 <ul>
 <li>前に試してうまくいかなかった。</li>
-<li>WPF アプリケーションではうまくいかないようだ。（ WPF を使うわけではいんだけど。）</li>
+<li>WPF アプリケーションではうまくいかないようだ。（ WPF を使うわけではないんだけど。）</li>
 </ul>
 <h2 id="アセンブリを埋め込みリソースにする">アセンブリを埋め込みリソースにする<a hidden class="anchor" aria-hidden="true" href="#アセンブリを埋め込みリソースにする">#</a></h2>
 <ul>
