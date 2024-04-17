@@ -11,8 +11,28 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 12 Apr 2024 21:54:11 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 17 Apr 2024 21:32:12 +0900</lastBuildDate>
     <atom:link href="https://mikangogo.github.io/making-records/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PC遍歴を思い出す</title>
+      <link>https://mikangogo.github.io/making-records/posts/misc/20240417/c5033e99111aae98a0f71359967ecf40550b17b4712f4b3cbbc0855a9d0e5bc0/</link>
+      <pubDate>Wed, 17 Apr 2024 17:05:59 +0900</pubDate>
+      <guid>https://mikangogo.github.io/making-records/posts/misc/20240417/c5033e99111aae98a0f71359967ecf40550b17b4712f4b3cbbc0855a9d0e5bc0/</guid>
+      <description>2003～2006? CPU Intel Pentium 4 2.6C GHz
+M/B D865GBFLK
+2006?～2008? CPU Intel Xeon 2.4GHz @2
+M/B SE7505VB2
+2008?～2011? CPU Intel Core 2 Duo E6850
+M/B GA-P35-DQ6
+2011?～2014? CPU Intel Core i7 950
+M/B MS-7522
+2014?～2019 CPU Intel Core i7 4790
+M/B MS-7888
+2019～2023 CPU Intel Core i7 9700K
+M/B MS-7B12
+2023～現在 CPU Intel Core i7 14700KF
+M/B MS-7D91</description>
+    </item>
     <item>
       <title>C#で複数のアセンブリを束ねる方法</title>
       <link>https://mikangogo.github.io/making-records/posts/tech/20240412/29680def7437a60c4a1b39d0897dc96b761035efc2c570d4f3ded03ed86af203/</link>

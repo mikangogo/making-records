@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>PC on 🍊MIKAN no Blog</title>
+    <link>https://mikangogo.github.io/making-records/tags/pc/</link>
+    <description>Recent content in PC on 🍊MIKAN no Blog</description>
+    <image>
+      <title>🍊MIKAN no Blog</title>
+      <url>https://mikangogo.github.io/making-records/images/papermod-cover.png</url>
+      <link>https://mikangogo.github.io/making-records/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 17 Apr 2024 21:32:12 +0900</lastBuildDate>
+    <atom:link href="https://mikangogo.github.io/making-records/tags/pc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PC遍歴を思い出す</title>
+      <link>https://mikangogo.github.io/making-records/posts/misc/20240417/c5033e99111aae98a0f71359967ecf40550b17b4712f4b3cbbc0855a9d0e5bc0/</link>
+      <pubDate>Wed, 17 Apr 2024 17:05:59 +0900</pubDate>
+      <guid>https://mikangogo.github.io/making-records/posts/misc/20240417/c5033e99111aae98a0f71359967ecf40550b17b4712f4b3cbbc0855a9d0e5bc0/</guid>
+      <description>2003～2006? CPU Intel Pentium 4 2.6C GHz
+M/B D865GBFLK
+2006?～2008? CPU Intel Xeon 2.4GHz @2
+M/B SE7505VB2
+2008?～2011? CPU Intel Core 2 Duo E6850
+M/B GA-P35-DQ6
+2011?～2014? CPU Intel Core i7 950
+M/B MS-7522
+2014?～2019 CPU Intel Core i7 4790
+M/B MS-7888
+2019～2023 CPU Intel Core i7 9700K
+M/B MS-7B12
+2023～現在 CPU Intel Core i7 14700KF
+M/B MS-7D91</description>
+    </item>
+  </channel>
+</rss>
