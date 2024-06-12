@@ -11,8 +11,21 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 05 Apr 2024 01:17:58 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 12 Jun 2024 10:08:47 +0900</lastBuildDate>
     <atom:link href="https://mikangogo.github.io/making-records/categories/%E9%89%84%E9%81%93/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>自動空気ブレーキまとめ (2)</title>
+      <link>https://mikangogo.github.io/making-records/posts/train/20240612/e683ffff167ab23c808e50f4b910a9afc81611179c848fb882ae1ee8cf79c72e/</link>
+      <pubDate>Wed, 12 Jun 2024 10:08:47 +0900</pubDate>
+      <guid>https://mikangogo.github.io/making-records/posts/train/20240612/e683ffff167ab23c808e50f4b910a9afc81611179c848fb882ae1ee8cf79c72e/</guid>
+      <description>概要 自動空気ブレーキの情報をまとめる。
+情報提供 自力発見。NDLデジタルコレクションにて検索。（検索クエリ失念につき不明）
+掲載場所 車両と電気 29(8)(341) p.24-　「鉄道技術ゼミナール(11) 気動車のブレーキ方式（その3）（内海和人）」 NDLデジタルコレクションから閲覧可。
+内容 気動車の空気ブレーキ装置の種類及び使用形式 (p.24) 種類と運転台の有無、それに対する使用形式（車両）についての表。
+空気圧縮機諸元 (p.25) C400とC600に関する諸元の表。
+空気ブレーキ装置ツナギ (p.27-28) 以下の装置についてのツナギ図
+DA1 DARS CLE </description>
+    </item>
     <item>
       <title>K制御弁カットモデル</title>
       <link>https://mikangogo.github.io/making-records/posts/train/20240405/c1221444e8a34ec7f17a6dbae32c3db3f41402a8baca929ebcc6bb748646ef44/</link>
